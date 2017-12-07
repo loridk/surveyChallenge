@@ -1,0 +1,48 @@
+body {
+  background-image: url("../img/dots.png");
+}
+
+#main {
+  background-color: #ffffff;
+}
+
+#points {
+  background-color: #ace8ec;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+#question, #favBand, #bandsInTown {
+  background-color: #ace8ec;
+  border: thin solid black;
+  margin: 5% 0;
+  padding: 2%;
+
+  .questionText {
+    margin-bottom: 5%;
+  }
+}
+
+#favBand {
+  display: none;
+}
+
+#bandsInTown {
+  display: none;;
+}
+
+@media only screen and (min-width: 992px) {
+  #main {
+    -webkit-box-shadow: 0px 0px 46px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 46px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 46px 0px rgba(0,0,0,0.75);
+    background-color: #ffffff;
+    margin-top: 2%;
+  }
+
+  #pointsContainer {
+      float: right;
+  }
+
+
+}

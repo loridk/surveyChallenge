@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Music Survey</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="container" id="main">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Music Survey</h1>
+                </div>
+                <div class="col-md-6">
+                    <h2 id="pointsContainer">Points: <span id="points">0</span></h2>
+                </div>
+            </div>
+
+            <div id="question">
+                <h3 class="questionText"></h3>
+                <div class="btn btn-default yes" data-next="">Yes</div>
+                <div class="btn btn-default no" data-next="">No</div>
+
+                <div class="btn btn-default pull-right back">Last Question</div>
+            </div>
+
+            <div id="favBand">
+                <form>
+                    <div class="form-group">
+                        <h3>What is your favourite active artist/band?</h3>
+                        <input type="text" class="form-control" id="band" placeholder="Taylor Swift">
+                    </div>
+
+                    <button id="submit" class="btn btn-default">Submit</button>
+                </form>
+            </div>
+
+            <div id="bandsInTown">
+                <h2 id="bandName"></h2>
+                <p><img id="bandPic" src="" class="img-responsive"></p>
+                <p id="bandFB"></p>
+                <p id="bandEvents"></p>
+                <p id="bandEventsLink"></p>
+
+                <div class="btn btn-primary" onclick="location.reload();">Restart</div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
