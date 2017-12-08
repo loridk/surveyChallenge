@@ -29,8 +29,9 @@ $(document).ready(function(){
             data: {band: $('#band').val().split(" ").join("")},
             success: function(data) {
                 $('#bandsInTown').prepend("<h3>Thanks for taking our survey!</h3>")
-
+                console.log(data);
                 var obj = JSON.parse(data);
+                console.log(obj);
 
                 if (obj.name) {
                     $("#bandName").html(obj.name);

@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 	$band = $_POST['band'];
 
@@ -9,4 +9,3 @@
 
 	echo $parsed_json;
 	return false;
- ?>
